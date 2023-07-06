@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/pattern-background-mobile.svg);
+    font-family: 'Red Hat Display', sans-serif;
+    background-repeat: no-repeat;
+    background-color: var(--Paleblue);
+}
+
+.container {
+    width: 328px;
+    height: 569px;
+    margin: 70px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    box-shadow: 5px 5px 25px gray;
+}
+
+/* -------------- IMAGEN ------------------------- */
+
+.section0 {
+    margin-bottom: 37px;
+}
+#illustration-hero {
+    background-image: url(../images/illustration-hero.svg);
+    width: 328px;
+    height: 160px;
+    background-size: cover;
+}
+
+/* ----------------- SECTION ----------------------------------- */
+#section1 {
+    padding: 0 24px;
+    text-align: center;
+}
+
+#section1 h1 {
+    font-weight: 900;
+    margin-bottom: 23px;
+}
+
+#section1 > p {
+    height: 66px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 1.4rem;
+    color: var(--Desaturatedblue);
+}
+
+/* ----------------- DIV PLAN ----------------------------------- */
+
+#section1 #plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(229, 231, 243, 0.329);
+    border-radius: 8px;
+    height: 84px;
+    font-size: 0.9rem;
+}
+
+#plan .annual-plan {
+    margin-left: -20px;
+}
+#plan .annual-plan .annual {
+    font-weight: 700;
+}
+#plan .annual-plan .precio {
+    font-weight: 500;
+    color: var(--Desaturatedblue);
+}
+
+#plan a {
+    color: var(--Brightblue);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#plan a:hover {
+    text-decoration: none;
+    color: hsl(245, 81%, 61%);
+}
+
+#section1 .btn-payment {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+#section1 .btn-payment a {
+    display: block;
+    padding: 14px;
+    border-radius: 14px;
+    background-color: var(--Brightblue);
+    font-size: 1rem;
+    font-weight: 700;
+    /* margin-bottom: 24px; */
+    box-shadow: 0 5px 25px 2px var(--Desaturatedblue);
+    color: var(--Verypaleblue);
+    text-decoration: none;
+}
+#section1 .btn-payment a:hover {
+    background-color: hsl(245, 68%, 58%);
+    text-decoration: none;
+}
+
+/* ---------------------- Cancel Order ----------------------------- */
+#section1 .cancel-order {
+    margin-bottom: 37px;
+}
+
+#section1 .cancel-order a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--Desaturatedblue);
+}
+
+#section1 .cancel-order a:hover {
+    color: black;
+}
+
+/* ---------------------- FOOTER ----------------------------- */
+
+.attribution {
+    margin-top: -30px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ---------------------------- MEDIA QUERY (1440px)------------------- */
+@media screen and (min-width: 1440px) {
+    body {
+        background: url(../images/pattern-background-desktop.svg);
+        font-family: 'Red Hat Display', sans-serif;
+        background-repeat: no-repeat;
+        background-color: var(--Paleblue);
+    }
+
+    .container {
+        width: 450px;
+        height: 698px;
+        margin: 100px auto;
+    }
+
+    /* -------------- IMAGEN ------------------------- */
+    #illustration-hero {
+        width: 450px;
+        height: 220px;
+    }
+
+    /* -------------- SECTION 1 ------------------------- */
+    #section1 {
+        padding: 0 48px;
+    }
+
+    #section1 h1 {
+        font-weight: 900;
+        margin-bottom: 23px;
+    }
+    #section1 > p {
+        height: 68px;
+        margin-bottom: 22px;
+        font-size: 16px;
+        line-height: 1.4rem;
+        color: var(--Desaturatedblue);
+    }
+
+    /* ----------------- DIV PLAN ----------------------------------- */
+
+    #section1 #plan {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding: 18px; */
+        margin-bottom: 32px;
+        background-color: rgba(229, 231, 243, 0.329);
+        border-radius: 8px;
+        height: 99px;
+        font-size: 0.9rem;
+    }
+
+    #plan .annual-plan {
+        margin-left: -50px;
+    }
+    #plan .annual-plan .annual {
+        font-weight: 700;
+    }
+    #plan .annual-plan .precio {
+        font-weight: 500;
+        color: var(--Desaturatedblue);
+    }
+
+    #plan a {
+        color: var(--Brightblue);
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+
+    #plan a:hover {
+        text-decoration: none;
+        color: hsl(245, 81%, 61%);
+    }
+
+    #section1 .btn-payment {
+        margin-bottom: 35px;
+        height: 50px;
+    }
+}
